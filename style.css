@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff7ef; /* nežna pastelno narandžasta pozadina */
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background: linear-gradient(90deg, #ffb07c, #ff9f68);
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1000;
+}
+
+/* SIDEBAR */
+#sidebar {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 260px;
+    height: calc(100vh - 70px);
+    background: #fff3e8;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+#sidebar h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff7f32;
+}
+
+#sidebar select, 
+#sidebar button {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ffc89b;
+    background: #fff;
+}
+
+#sidebar button {
+    background: #ff9d5c;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#sidebar button:hover {
+    background: #ff8a39;
+}
+
+.layer-option {
+    display: block;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+/* MAP */
+#map {
+    position: absolute;
+    left: 260px;
+    top: 70px;
+    width: calc(100% - 260px);
+    height: calc(100vh - 70px);
+}
